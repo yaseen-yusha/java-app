@@ -10,7 +10,9 @@ pipeline{
       
         script{
         
-          git branch: 'main', url: 'https://github.com/yaseen-yusha/java-app.git'
+          gitCheckout{
+            branch:"main"
+            url: 'https://github.com/yaseen-yusha/java-app.git'
         }
       }
     }
