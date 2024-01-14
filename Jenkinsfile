@@ -3,7 +3,15 @@ pipeline{
   
   stages{
     
-    stage('Git checkout'{
+    stage('Git checkout'){
+      steps{
+        script{
+          git branch: 'main', url: 'https://github.com/yaseen-yusha/java-app.git'
+        }
+      }
+    }
+    stage(){ 
       steps{
         script{
           
+                       
