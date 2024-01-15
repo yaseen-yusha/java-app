@@ -5,7 +5,7 @@ pipeline{
       steps{
         script{
 
-          git 'https://github.com/yaseen-yusha/java-app.git'
+          git branch: 'main', url: 'https://github.com/yaseen-yusha/java-app.git'
           
         }
       }
